@@ -1,0 +1,13 @@
+在终端写入.md的文件，然后使它以网页的形式显示出来，且字体大小、粗细有规定
+方法是：
+#表示大字体，##次之，###又次之，#越多字体越小
+上下留有一个空行，将来在网页上显示的时候会有换行。
+例如：
+
+## introduce
+
+# Hello everyone,glad to meet you !
+
+# about myself
+
+## I love music
