@@ -1,0 +1,67 @@
+　　Git 是用于 Linux 内核开发的版本控制工具:
+如果你是位图形或网页设计师，可能会需要保存某一幅图片或页面布局文件的所有修订版本。采用版本控制系统（VCS）是个明智的选择。有了它你就可以将某个文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态。你可以比较文件的变化细节，查出是谁最后修改了什么地方从而造成某些怪异问题，又是谁在何时报告了某个功能缺陷，等等。使用版本控制系统通常还意味着，就算你胡来搞砸了整个项目，把文件改的改，删的删，你也可以轻松恢复到原先的样子。而由此额外增加的工作量却微乎其微。
+
+
+   git log: one of the many ways to get a look at the histroy:
+2、mv b/a .   把b目录中的a目录移出来
+3、mv b/fileb a/filea
+4、cp b/fileb a/filea
+5、cp -r directory    不能复制时使用-r
+6、rm -r *   删除全部
+   rm -r *.md(.c)   删除某一种类型的全部文件或目录
+7、git pull
+   tig
+   d
+
+
+8、 tig - text-mode interface for git
+    tig 是一款命令行界面的 git 版本仓库工具。
+
+9、首次使用git:
+peter@vostro:~$ mkdir mydir
+peter@vostro:~$ cd mydir/
+peter@vostro:~/mydir$ ls
+peter@vostro:~/mydir$ vim README
+peter@vostro:~/mydir$ ls
+README
+peter@vostro:~/mydir$ cat README 
+hello world
+peter@vostro:~/mydir$ git init
+Initialized empty Git repository in /home/peter/mydir/.git/
+peter@vostro:~/mydir$ ls -a
+.  ..  .git  README
+peter@vostro:~/mydir$ git add README
+peter@vostro:~/mydir$ git commit -a -m "my first version"
+[master (root-commit) b50d0f7] my first version
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+  create mode 100644 README
+  peter@vostro:~/mydir$
+peter@vostro:~/mydir$ vim README 
+peter@vostro:~/mydir$ cat README 
+hello world
+hello again
+peter@vostro:~/mydir$ git commit -a -m "my second verion"
+[master 3ccdf5e] my second verion
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+peter@vostro:~/mydir$ git log
+
+
+
+ 1. 要重新置入已經刪除的文本內容，請輸入小寫字母 p。該操作可以將已刪除
+     的文本內容置于光標之後。如果最後一次刪除的是一個整行，那麼該行將置
+     于當前光標所在行的下一行。
+
+  2. 要替換光標所在位置的字符，請輸入小寫的 r 和要替換掉原位置字符的新字
+     符即可。
+
+  3. 更改類命令允許您改變指定的對象，從當前光標所在位置直到對象的末尾。
+     比如輸入 cw 可以替換當前光標到單詞的末尾的內容；輸入 c$ 可以替換當
+     前光標到行末的內容。
+
+      cTRL-g 顯示當前編輯文件中當前光標所在行位置以及文件狀態信息。
+     輸入 SHIFT-G 則直接跳轉到文件中的某一指定行。
+
+
+
+
+查看-- 字符编码-- utf8 -----乱码改好
