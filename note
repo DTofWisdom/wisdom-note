@@ -100,3 +100,13 @@ peter@vostro:~/mydir$ git log
 
 
   switch语句：case后只能为整型；break和default可加可不加
+
+
+
+
+  编码规范：不同公司使用不同的编码规范，不必记忆
+    格式化源文件：indent filename
+                  indent -kr filename
+                  indent -kr -i8 filename
+     格式化源文件indent会自动规范源文件格式，是源文件格式更好看            
+
